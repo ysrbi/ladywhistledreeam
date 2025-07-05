@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+}
+
+/*  PAGE ACCUEIL : DEBUT HEADER  */
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  background-image: url(fond-porcelaine.PNG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.lien-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.912);
+  box-shadow: 0px 0px 9px 2px rgba(68, 66, 132, 0.75);
+  padding: 20px;
+  margin: 20px;
+  z-index: 1;
+  position: relative;
+  bottom: 100px;
+}
+
+.lien-navbar1 {
+  text-decoration: none;
+  color: #3c4f76;
+  font-size: 30px;
+  font-family: "EB Garamond", serif;
+  font-style: normal;
+  transition: transform 0.3s ease; /* Animation fluide */
+}
+
+.lien-navbar1:hover {
+  transform: scale(1.1); /* Grossit à 110% */
+}
+
+@media (hover: hover) {
+  .lien-navbar1:hover {
+    color: #e6c96e;
+  }
+}
+
+.p-img-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+  bottom: 50px;
+}
+
+/*  PAGE ACCUEIL : FIN HEADER  */
+
+/* PAGE ACCUEIL : DEBUT MAIN  */
+
+.main-accueil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+  line-height: 30px;
+  background-color: white;
+  box-shadow: 0px 0px 9px 2px rgba(68, 66, 132, 0.75);
+  width: 80%;
+  position: relative;
+  left: 120px;
+}
+
+.p-intro-accueil,
+.edition-1 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.subtitle-edition,
+.title-edition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title-edition {
+  color: #3c4f76;
+  font-size: 50px;
+}
+
+.subtitle-edition {
+  color: #b7afc3;
+}
+
+.img-edition-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.img1 {
+  border-radius: 300px;
+}
+
+.p-intro-accueil {
+  text-align: center;
+  font-size: 35px;
+  margin-left: 50px;
+  margin-right: 50px;
+  line-height: 45px;
+  font-family: "EB Garamond", serif;
+  font-style: normal;
+}
+
+.p-edition-1 {
+  text-align: center;
+  line-height: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 30px;
+  font-family: "EB Garamond", serif;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.edition-1 {
+  box-shadow: 0px 0px 9px 2px rgba(68, 66, 132, 0.75);
+  padding-top: 30px;
+  margin-top: 20px;
+  margin-left: 70px;
+  margin-right: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.voir-la-suite {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  color: #3c4f76;
+  padding: 20px;
+  width: 250px;
+  border-radius: 50px;
+  border: 1px solid rgba(68, 66, 132, 0.75);
+  color: rgba(68, 66, 132, 0.75);
+  font-size: 40px;
+  font-family: "EB Garamond", serif;
+  font-style: normal;
+}
+
+@media (hover: hover) {
+  .voir-la-suite:hover,
+  .bouton-cliquez-ici:hover {
+    background-color: #3c4f76;
+    color: white;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #3c4f76;
+}
+
+.btn-haut-de-page {
+  position: fixed;
+  left: 1380px;
+  bottom: 300px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding: 10px;
+  border: 1px solid #3c4f76;
+}
+
+/* PAGE ACCUEIL : FIN MAIN */
+
+/* PAGE ACCUEIL : DEBUT FOOTER */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-image: url(fond-porcelaine.PNG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.reseaux-sociaux,
+.email-contact,
+.copyright-footer {
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.896);
+  box-shadow: 0px 0px 9px 2px rgba(68, 66, 132, 0.75);
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: space-evenly;
+}
+
+.mentions-legales {
+  margin-right: 10px;
+}
+
+.instagram {
+  margin-left: 10px;
+}
+
+/* PAGE ACCUEIL : FIN FOOTER */
+
+/* MEDIA QUERIES */
+
+/* téléphones */
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+  body {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-header,
+  .lien-navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lien-navbar {
+    position: relative;
+    bottom: 190px;
+  }
+
+  .image-logo-lw {
+    position: relative;
+    bottom: 30px;
+  }
+
+  .p-intro-accueil {
+    margin: 10px;
+    font-size: 30px;
+  }
+
+  .main-accueil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 0px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .edition-1 {
+    width: 85%;
+    height: 100%;
+    margin-top: 30px;
+  }
+
+  .p-edition-1 {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .title-edition {
+    text-align: center;
+    line-height: 60px;
+  }
+
+  .voir-la-suite {
+    background-color: #3c4f76;
+  }
+
+  .bouton-cliquez-ici {
+    color: white;
+  }
+
+  .btn-haut-de-page {
+    position: relative;
+    left: 0;
+    bottom: 10px;
+    border-radius: 0px;
+    padding: 0px;
+    border: none;
+  }
+
+  footer {
+    width: 100vw;
+  }
+}

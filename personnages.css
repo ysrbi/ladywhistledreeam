@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fffcf9;
+  width: 100vw;
+  height: 100vh;
+  font-family: "EB Garamond";
+  font-style: normal;
+}
+
+/*  PAGE PERSONNAGES : DEBUT HEADER */
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  background-image: url(fond-porcelaine.PNG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.lien-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.912);
+  box-shadow: 0px 0px 9px 2px rgba(68, 66, 132, 0.75);
+  padding: 20px;
+  margin: 20px;
+  z-index: 1;
+  position: relative;
+  bottom: 100px;
+}
+
+.lien-navbar1 {
+  text-decoration: none;
+  color: #3c4f76;
+  font-size: 30px;
+  font-family: "EB Garamond", serif;
+  font-style: normal;
+  transition: transform 0.3s ease; /* Animation fluide */
+}
+
+.lien-navbar1:hover {
+  transform: scale(1.1); /* Grossit à 110% */
+}
+
+@media (hover: hover) {
+  .lien-navbar1:hover {
+    color: #e6c96e;
+  }
+}
+
+.p-img-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+  bottom: 50px;
+}
+
+/*  PAGE PERSONNAGES : FIN HEADER */
+
+/* PAGE PERSONNAGES : DEBUT MAIN */
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  width: 450px;
+  height: 600px;
+}
+
+.card-container:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card {
+  height: 650px;
+  width: 450px;
+  transition: all 0.3s ease;
+  transform-style: preserve-3d;
+}
+
+.card-front,
+.card-back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 200px;
+  border-radius: 20px;
+  /* margin: 30px; */
+}
+
+.card-front {
+  box-shadow: 0px 0px 9px 2px rgba(68, 66, 132, 0.75);
+  background-color: #3c4f76;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  color: #3c4f76;
+  background: #3e6ec2;
+  background: radial-gradient(
+    circle,
+    rgba(62, 110, 194, 1) 0%,
+    rgba(30, 58, 107, 1) 100%
+  );
+}
+
+.c-f-name {
+  font-size: 40px;
+  text-align: center;
+}
+.c-f-maj {
+  font-size: 15px;
+}
+
+.c-f-maj,
+.c-f-name {
+  color: white;
+  line-height: 40px;
+}
+
+.ornement-hd {
+  position: absolute;
+  right: 40px;
+  bottom: 240px;
+}
+
+.ornement-hg {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.ornement-bd {
+  position: absolute;
+  top: 240px;
+  right: 40px;
+}
+
+.ornement-bg {
+  position: absolute;
+  top: 240px;
+  right: 10px;
+}
+
+.card-back {
+  box-shadow: 0px 0px 9px 2px rgba(68, 66, 132, 0.75);
+  background-color: rgb(245, 245, 251);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(-180deg);
+  color: rgb(0, 0, 0);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: #3e6ec2;
+  background: radial-gradient(
+    circle,
+    rgba(62, 110, 194, 1) 0%,
+    rgba(30, 58, 107, 1) 100%
+  );
+}
+
+.containers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-bottom: 70px;
+  margin-top: 50px;
+}
+
+.img-personnages {
+  border-radius: 20px;
+  position: absolute;
+  bottom: 0px;
+}
+
+/*  PAGE PERSONNAGES : FIN MAIN */
+
+.btn-haut-de-page {
+  position: fixed;
+  left: 1350px;
+  top: 500px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding: 10px;
+  border: 1px solid #3c4f76;
+}
+
+/* PAGE PERSONNAGES : DEBUT FOOTER */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin-top: 100px;
+  background-image: url(fond-porcelaine.PNG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.reseaux-sociaux,
+.email-contact,
+.copyright-footer {
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.896);
+  box-shadow: 0px 0px 9px 2px rgba(68, 66, 132, 0.75);
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: space-evenly;
+}
+
+.mentions-legales {
+  margin-right: 10px;
+}
+
+.instagram {
+  margin-left: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #3c4f76;
+}
+/* PAGE PERSONNAGES : FIN FOOTER */
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+  body {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-header,
+  .lien-navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lien-navbar {
+    position: relative;
+    bottom: 190px;
+  }
+
+  .image-logo-lw {
+    position: relative;
+    bottom: 30px;
+  }
+
+  main,
+  .containers,
+  .card-container,
+  .card,
+  .card-back,
+  .card-front {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    margin-top: 100px;
+  }
+
+  .card-front {
+    visibility: hidden;
+  }
+  .card-back {
+    transform: rotateY(0deg);
+  }
+
+  .card-container {
+    margin-bottom: 20px;
+    margin-top: 90px;
+  }
+
+  .card-container:hover .card {
+    transform: none;
+  }
+
+  .containers {
+    margin-top: 0px;
+  }
+
+  .mobile-only {
+    visibility: visible;
+    color: #3c4f76;
+    font-size: 30px;
+    font-style: oblique;
+    z-index: 1;
+    position: absolute;
+    top: 500px;
+    padding: 10px;
+  }
+
+  .btn-haut-de-page {
+    position: relative;
+    left: 0px;
+    top: -10px;
+    border-radius: 0px;
+    padding: 0px;
+    border: none;
+  }
+
+  footer {
+    width: 100vw;
+    position: relative;
+    top: -100px;
+  }
+}
